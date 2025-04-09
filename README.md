@@ -10,22 +10,22 @@ Cosa consegnare:
 
 ## Name: cars
 
-- id BIGINT - Primary key
-- brand - VARCHAR(100)
-- model - VARCHAR(100)
-- year - YEAR
-- mileage - SMALLINT
-- fuel_type - VARCHAR(10)
-- transmission VARCHAR(50)
-- engine_displacement INTEGER
-- power VARCHAR(50)
+- id BIGINT - Primary key - NOT NULL
+- brand - VARCHAR(100) - NOT NULL
+- model - VARCHAR(100) - NOT NULL
+- year - YEAR - NOT NULL
+- mileage - SMALLINT - NOT NULL
+- fuel_type - VARCHAR(10) - NULL
+- transmission VARCHAR(50) - NULL
+- engine_displacement INTEGER - NULL
+- power VARCHAR(50) - NULL
 - color VARCHAR(50) *si potrebbe anche pensare ad un'altra tabella con gli ID e i colori disponibili
-- doors TINYINT
-- seats  TINYINT
-- emission_class VARCHAR(50)
-- price DECIMAL(10, 2)
-- is_available TINYINT(1)
-- description TEXT
-- created_at DATETIME
-- updated_at DATETIME
-- image-url VARCHAR(255)
+- doors TINYINT - NULL
+- seats  TINYINT - NULL
+- emission_class VARCHAR(50) - NULL
+- price DECIMAL(10, 2) - NULL
+- is_available TINYINT(1) - NULL - DEFAULT(1)
+- description TEXT - NULL
+- created_at DATETIME - NOT NULL
+- updated_at DATETIME - NOT NULL
+- image-url VARCHAR(255) - NULL
